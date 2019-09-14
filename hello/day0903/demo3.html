@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义弹窗</title>
+    <style>
+        body,p{
+            margin: 0;
+
+        }
+        .layer{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;//一直定在屏幕上
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.3);
+        }
+        .content-wrapper{
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+        }
+        .top{
+            width: 100%;
+            height: 36px;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            color: #666666;
+            font-weight: bold;
+            border-bottom: 1px solid #333333;
+        }
+        .info{
+            height: 90px;
+            box-sizing: border-box;
+            padding: 10px;
+            color: blue;
+        }
+        .button-wrapper{
+            justify-content: space-around;
+        }
+    </style>
+
+    <script>
+        var isDelete = false;
+        function showLayer() {
+            document.getElementById('layer').setAttribute('style','display:flex');
+        }
+        function hideLayer(x,e) {
+            if(e!=undefined){
+                e.cancelBubble = true;
+            }
+            document.getElementById('layer').removeAttribute('style');
+            isDelete = x;
+            console.log(isDelete);
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="showLayer();">删除</button>
+<div id="layer" class="layer" onclick="hideLayer(false);">
+    <div class="content-wrapper">
+        <div class="top">
+            <span>提示信息</span>
+        </div>
+        <div class="info-wrapper">
+            <p class="info">您确定要删除吗</p>
+            <div class="button-wrapper">
+                <button  type="button" onclick="hideLayer(true,event);">确定</button>
+                <button  type="button" onclick="hideLayer(false);">取消</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

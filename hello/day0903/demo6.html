@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>方法回掉</title>
+    <script>
+        /*function a(x) {
+            x();
+        }
+
+        /!*在自己函数的内部调用别人传过来的函数叫做回调方法
+        *
+        * 意义何在？
+        * *!/
+
+        var test = function(){
+            console.log(1)
+        }
+        a(test);*/
+
+        /*
+         * 假设js能读取文件
+         * 做成异步
+         * */
+        function readFile(Filename, callable) {
+            //正在读取文件。。。
+            //正在读取文件。。。
+            //正在读取文件。。。
+            //正在读取文件。。。
+            //正在读取文件。。。
+            //正在读取文件。。。
+            callable('文件内容');
+        }
+        /*
+        * 处理文件内容
+        * @param content
+        * */
+       /* var readed = function (content) {
+            //还有一段逻辑，这段逻辑等待文件读取完成把内容写入页面
+        };
+
+        var content = readFile('xxxx.txt',readed);*/
+       //上边代码可写成下边形式
+        //方法传方法的时候大多数都传匿名函数
+        var content = readFile('xxxx.txt',function (content) {
+            
+        })
+
+        
+
+        
+        //其他逻辑，例如渲染页面其他内容或者一些与读取文件无关的计算
+        
+        //方法能嵌套声明,java中不可以
+        function a() {
+
+            function b() {
+                
+            }
+            b();
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

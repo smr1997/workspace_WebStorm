@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*写在这个media里的样式当屏幕小于300宽的时候生效*/
+        @media screen and (max-width: 300px){
+            html{
+                font-size: 18px;
+            }
+        }
+        /*写在这个media里的样式当屏幕大于300小于350宽的时候生效*/
+        @media screen and (min-width: 300px) and (max-width: 350px){
+            html{
+                font-size: 20px;
+            }
+        }
+        /*写在这个media里的样式当屏幕大于350小于400宽的时候生效*/
+        @media screen and (min-width: 350px) and (max-width:400px){
+            html{
+                font-size: 22px;
+            }
+        }
+
+
+        .test{
+            width: 100px;
+            border: 1px solid red;
+            overflow: hidden;/*将多余部分隐藏*/
+            white-space: nowrap;/*强制让文字不换行在一行显示*/
+            text-overflow: ellipsis;/*文本溢出的处理方式，ellipsis变成...的意思*/
+        }
+    </style>
+
+</head>
+<body>
+<div class="test">酒店南京阿肺结核伍尔夫不能吃那些不承担伍尔夫怕了京东方唬我呢</div>
+</body>
+</html>

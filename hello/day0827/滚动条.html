@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>溢出产生滚动条及其隐藏</title>
+    <meta name="viewport" content="width-device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <style>
+        .hiddenscroll{
+            width: 200px;
+            height: 483px;
+            overflow: hidden;
+        }
+        /*假设滚动条的宽度是17px*/
+        .main{
+            width: 217px;
+            height: 500px;
+
+            overflow: scroll;
+
+        }
+        /*这个方法存在局限性，只适用于部分浏览器*/
+       /* .main::-webkit-scrollbar{
+            display: none;
+        }*/
+
+        /*另一种方法是在上边加一个去掉滚动条的大小的框架的父元素，使滚动条溢出掉，遮盖住
+        兼容性高*/
+        .item{
+            width: 200px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="hiddenscroll">
+<div class="main">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+</div>
+</div>
+</body>
+</html>

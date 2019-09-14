@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动端一半定长一半移动</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 600px;
+            border: 1px solid yellowgreen;
+            display: flex;
+        }
+        .main .left{
+            flex:0 0 100px;
+            background-color: blue;
+        }
+        .main .right{
+            flex:1 1 auto;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

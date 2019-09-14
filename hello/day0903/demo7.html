@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <script>
+        /*//一次性定时 只显示一次
+        setTimeout(function () {
+            alert(1);
+        },2000);*/
+
+       /* //重复
+        setInterval(function () {
+            console.log(1);
+        },2000);
+*/
+
+    /**
+     * 定时八秒，页面显示秒数，八秒之后关闭
+     * */
+    /*var time = 8;
+    setInterval(function () {
+        if (time<=0){
+            window.close();
+        } else{
+            document.getElementById('t').innerText = --time;
+        }
+
+    },1000);
+
+    console.log(1);*/
+
+    /**
+     * 移动一张图片，移动到屏幕最右边停止
+     * setInterval不只是自动定时器，他会把启动的定时器对象return出来
+     * */
+    var step =100;
+    var a = setInterval(function () {
+        document.getElementById('i').setAttribute('style', 'margin-left:' + step + 'px;');
+        step += 100;
+        if (step >= 1000) {
+            //停止定时器
+            //清理定时器
+            clearInterval(a);
+        }
+    },300);
+    var b = setInterval(function () {
+
+    },500);
+
+    </script>
+</head>
+<body>
+<img id="i" src="图片地址" alt="">
+     <!--<div id="test">
+         页面将在<span id="t">8</span>s之后关闭
+     </div>-->
+</body>
+</html>

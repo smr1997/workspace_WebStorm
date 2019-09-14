@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标悬停一个元素另一个元素展示</title>
+    <style>
+        .main{
+            display: flex;
+            width: 800px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .left{
+            width: 30%;
+            height: 400px;
+            background-color: red;
+        }
+        .right{
+            display: none;
+            width: 70%;
+            height: 400px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function showMenu() {
+            document.getElementById('menu').setAttribute('style','display:block;');
+        }
+        function hideMenu() {
+            document.getElementById('menu').removeAttribute('style');
+
+        }
+    </script>
+
+</head>
+<body>
+    <div class="main">
+       <div class="left" onmouseover="showMenu();" onmouseout="hideMenu();"></div>
+       <div id="menu" class="right" onmouseover="showMenu();" onmouseout="hideMenu();"></div>
+    </div>
+</body>
+</html>

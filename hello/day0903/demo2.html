@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数字加减</title>
+    <script>
+        function addCount() {
+            var input = document.getElementById('i');
+            var value = parseInt(input.getAttribute('value'));
+            if(value<=200){
+                input.setAttribute('value',++value);
+            }
+        }
+        function reduceCount() {
+            var input = document.getElementById('i');
+            var value = parseInt(input.getAttribute('value'));
+            if(value>0){
+                input.setAttribute('value',--value);
+            }
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="reduceCount()">-</button>
+<input type="text" value="1" id="i">
+<button type="button" onclick="addCount();">+</button>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标悬停字变颜色</title>
+    <script>
+        function changeColor() {
+            document.getElementById('test').setAttribute('style','color:red');
+        }
+        function resetColor() {
+            document.getElementById('test').setAttribute('style','');
+            //document.getElementById('test').removeAttribute('style');
+        }
+    </script>
+</head>
+<body>
+<div id="test" onmouseover="changeColor()"; onmouseout="resetColor();">sfgssgfvsfvb</div>
+
+</body>
+</html>

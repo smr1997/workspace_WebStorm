@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            display: none;
+        }
+        /*把效果加在img上边，鼠标放到二维码上图片出现，但是移到图片时图片消失*/
+        div:hover+img{
+            display: block;
+        }
+        /*当鼠标移到图片时图片不会消失*/
+        img:hover{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div>二维码</div>
+<img src="二维码图片地址" alt="">
+</body>
+</html>

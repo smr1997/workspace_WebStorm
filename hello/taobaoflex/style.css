@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 590px;
+    box-sizing: border-box;
+    padding: 21px;
+    display: flex;/*元素弹到一行*/
+    flex-wrap:wrap;/*换行*/
+    justify-content:space-between;/*两边靠边中间平分间距*/
+    align-content:space-between;/*上下靠边中间平分间距*/
+}
+.main .item .img-wrapper {
+    width: 180px;
+    height: 180px;
+    background-color: #3c3c3c;
+}
+.main .item .img-wrapper img{
+    height: inherit;
+    width: inherit;/*继承父元素的宽高*/
+}
+.item{
+    flex: 0 0 180px;
+    height: 271px;
+}
+.title{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: normal;
+}
+.desc{
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+}
+.extra{
+    color: #35b1ff;
+    font-size: 14px;
+    margin-top: 12px;
+
+}

@@ -1,0 +1,127 @@
+.main{
+    background-color: #f4f4f4;
+}
+.top-nav{
+    height: 36px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.top-nav .content-wrapper{
+    height: 100%;
+    width: 1190px;
+    margin: 0 auto;
+}
+.top-nav .content-wrapper ul{
+    list-style: none;  /*取消无序列表前边的小黑点*/
+}
+.top-nav .content-wrapper .left li{
+    float: left;
+    line-height: 36px;/*垂直居中*/
+    padding: 0 6px;/*加内边距来调整间距*/
+}
+.top-nav .content-wrapper .left .two{
+    margin-right:7px;
+    padding-right: 0;
+}
+
+.top-nav .content-wrapper .left .three{
+    margin-right:7px;
+    padding-left: 0;
+}
+
+.top-nav .content-wrapper .right{
+    float: right;
+}
+.top-nav .content-wrapper .right li{
+    float: left;
+    line-height: 36px;
+    padding: 0 6px;
+}
+
+.top-nav .content-wrapper a{
+    line-height: 36px;
+    display: inline-block;/*保持a标签的大小不变，点字的上方也生效*/
+    color: #3c3c3c;
+    font-size: 12px;
+}
+.banner{
+    width: 100%;
+    height:70px ;
+    background-color: #f84f62;
+}
+.banner .content-wrapper{
+    height: 100%;
+    width: 1190px;
+    margin:0 auto;/*居中*/
+}
+.banner .content-wrapper a{
+    /*vertical-align: top;  顶部对齐*/
+    display: inline-block;
+    position: relative;/*相对定位*/
+    bottom: 1px;
+}
+
+.layer{
+    width: 1190px;
+    height: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+
+}
+.layer .left{
+    width: 590px;
+   /* height: 500px;*/
+    background-color: #fff;
+    float: left;
+}
+.layer .left .title{
+    height: 24px;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.layer .left .title img{
+    height: 24px;
+    width: 74px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.layer .left .title .text{
+    font-size: 12px;
+    color: #999999;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 24px;/*垂直居中*/
+}
+
+.layer .left ul .item{
+    float: left;
+    margin: 0 4px 17px 0;
+}
+
+.layer .left ul .item .info{
+    padding: 0 4px 0 6px;
+}
+.layer .left ul .item .info .goods-name{
+    text-align: center;
+    color: #3c3c3c;
+}
+.layer .left ul .item .info .desc{
+    text-align: center;
+    color: #999999;
+}
+.layer .left ul .item .info .extra{
+    text-align: center;
+    color: blue;
+}
+.layer .left ul .item .img-wrapper img{
+    height: 180px;
+    width: 180px;
+}
+
+.layer .right{
+    width: 590px;
+    height: 500px;
+    background-color: #fff;
+    float: right;
+}

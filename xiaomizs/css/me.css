@@ -1,0 +1,175 @@
+html{font-size:62.5%;}
+body {
+    font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration:none;
+}
+.main {
+    width: 375px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+.main>.bottom-nav a {
+    margin: 1rem 0 0 0;
+}
+.main>.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 37.52rem;
+    height: 5.2rem;
+    background-color: #ffffff;
+    /*border: 0.1rem solid red;*/
+    justify-content: space-evenly;
+    box-shadow: 0 -0.3rem 0.5rem #e0f1f3;
+}
+.main>.bottom-nav .item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.main>.bottom-nav .item div{
+    font-size: 2.5rem;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.main>.bottom-nav .item div:before {
+    color: #999;
+}
+.main>.bottom-nav .item4 div:before {
+    color: #ff6700;
+}
+.main>.bottom-nav .item span {
+    font-size: 1.2rem;
+    color: #666;
+}
+.main .bottom-nav .item4 span {
+    font-size: 1.2rem;
+    color: #ff6700;
+}
+
+.main>.head {
+    width: 37.52rem;
+    height: 8.338rem;
+    background:#f37d0f url("../images/me2.png") no-repeat fixed top;
+    background-size: 37.52rem 8.338rem;
+}
+.main>.head .user {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 0 2rem;
+    box-sizing: border-box;
+}
+.main>.head .user .img {
+    width: 4.403rem;
+    height: 4.403rem;
+    /*box-shadow: 0 0 2rem white;*/
+}
+.main>.head .user .img img {
+    width: inherit;
+    height: inherit;
+
+}
+.main>.head .user .name {
+    padding: 0 0 0 1rem;
+    box-sizing: border-box;
+    font-size: 1.25067rem;
+    color: #ffffff;
+}
+
+.main .topnav {
+    display: flex;
+    justify-content: space-between;
+    width: 37.52rem;
+    height: 4.169rem;
+    align-items: center;
+}
+.main .topnav .left {
+    padding: 0 0 0 1.66756rem;
+    font-size: 1.45911rem;
+}
+.main .topnav .right {
+    padding: 0 1.91822rem 0 0;
+    font-size: 2rem;
+    color: #dbdbdb;
+}
+.main .topnav .right span {
+    font-size: 1.25067rem;
+    color: #000000;
+}
+.main .line1 {
+    width: 37.52rem;
+    border: 0.03rem solid #e6e6e6;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+}
+
+.main .topnav2 {
+    height: 8.783rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;                  /*文字垂直居中对齐*/
+}
+.main .topnav2 .icon-gouwuche {
+    font-size: 2.5rem;
+}
+.main .topnav2 .text2 {
+    font-size: 1.14644rem;
+}
+.main .line2 {
+    height: 1.041rem;
+    background: #f5f5f5;
+    overflow: hidden;
+    clear: both;
+}
+
+.main .nav {
+    width: 37.52rem;
+    height: 5.419rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .nav .left {
+     margin: 0 0 0 2rem;
+     font-size: 2rem;
+ }
+.main .nav .centre {
+    font-size: 1.45911rem;
+    margin-right: 20rem;
+}
+.main .nav .right {
+    margin: 0 1rem 0 0;
+    font-size: 2rem;
+    color: #dbdbdb;
+}
+.main .line3 {
+    width: 30.52rem;
+    border: 0.1rem solid #e6e6e6;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    position: relative;
+    left: 6.8rem;
+}
+
+.main .line4 {
+    height: 5rem;
+    background: #f5f5f5;
+    overflow: hidden;
+    clear: both;
+}

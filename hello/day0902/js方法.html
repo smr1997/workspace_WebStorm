@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--对于一个节点有哪些可操作性的，改变属性的值-->
+    <!--对于闭合标签除了属性还有标签中间的内容-->
+
+   <!--操作标签的内容
+       innerText:不能识别标签;innerHTML:能识别标签;
+       innerText,innerHTML会覆盖原有标签的内容-->
+   <!--操作标签属性-->
+</head>
+<body>
+
+<!--操作标签内容
+<div id="alink">fgdfgdgbgrb</div>
+<script>
+    var alink = document.getElementById('alink');
+    // alink.innerText = 'hello dom';//输入文本
+    //alink.innerHTML = '<a href="https://www.baidu.com">百度一下</a>';
+    //想要显示原有标签内容
+    alink.innerHTML = alink.innerHTML+'<a href="https://www.baidu.com">百度一下</a>';
+</script>-->
+
+<a id="alink" href="https://www.baidu.com" >百度一下</a>
+<script>
+     var alink = document.getElementById('alink');
+     //setAttribute方法指的是设置属性，第一个参数是属性，第二个参数是要设置的值
+     alink.setAttribute('href','https://www.sina.com');
+     console.log(alink.getAttribute('href'));
+</script>
+
+
+
+
+</body>
+</html>
